@@ -3,7 +3,7 @@ import axios from 'axios';
 axios.defaults.withCredentials = true;
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://13.210.63.212:3030/api',
+  baseURL: import.meta.env.VITE_API_URL,
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json'
